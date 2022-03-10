@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFile > $CFile
+gcc -c $CFILE > $( echo $CFILE | cut -d "." -f1).o
