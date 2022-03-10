@@ -1,0 +1,8 @@
+/* 02L01.c: This is my first C program */
+2: #include <stdio.h>
+3:
+4: main()
+5: {
+6: printf (“Howdy, neighbor! This is my first C program.\n”);
+7: return 0;
+8: }
