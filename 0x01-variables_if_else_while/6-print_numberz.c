@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * Description: Program that prints all single digit numbersfrom 0, followed by a new line.
+ * Description: Program that prints nums from 0, followed by a new line.
  * Return: 0
 */
 
