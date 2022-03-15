@@ -9,7 +9,7 @@
 int main(void)
 {
 int i;
-long long n1, n2, fabionacci[50];
+long int n1, n2, fabionacci[50];
 
 n1 = 1;
 n2 = 2;
