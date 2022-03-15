@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints the alphabet in lowercase.
+ * print_alphabet - Prints the alphabet in lowercase.
  * Description: prints alphabets is lower case followed
  * by new line
  * Return: 0
