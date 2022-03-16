@@ -11,16 +11,16 @@ int main(void)
 	int i = 0;
 	unsigned long int a = 0, b = 1, next;
 
-	while (i < 98)
+	while (i < 97)
 	{
 		next = a + b;
 		a = b;
 		b = next;
 		printf("%lu", next);
 
-		if (i < 97)
+		if (i < 96)
 			printf(", ");
-		++i;
+		i++;
 	}
 	putchar('\n');
 	return (0);
