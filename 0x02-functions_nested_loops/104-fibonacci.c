@@ -18,7 +18,7 @@ int main(void)
 		b = next;
 		printf("%lu", next);
 
-		if (i < 9)
+		if (i < 96)
 			printf(", ");
 		i++;
 	}
