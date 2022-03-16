@@ -8,26 +8,22 @@
 
 int main(void)
 {
-int i;
-long int n1, n2, fabionacci[50];
+	int i = 0;
+	long int a = 0, b = 1, next;
 
-n1 = 1;
-n2 = 2;
+	while (i < 50)
+	{
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%lu", next);
 
-printf("%ld, %ld", n1, n2);
-
-for (i = 2; i < 48; i++)
-{
-fabionacci[i] = fabionacci[i - 1] + fabionacci[i - 2];
-if (i == 49)
-{
-printf("%ld\n", fabionacci[i]);
-}
-else
-{
-printf("%ld, ", fabionacci[i]);
-}
-
-}
-return (0);
+		if (i < 49)
+		{
+			printf(", ");
+		}
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
