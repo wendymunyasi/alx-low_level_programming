@@ -20,7 +20,7 @@ int main(void)
 
 		if (i < 97)
 			printf(", ");
-		i++;
+		++i;
 	}
 	putchar('\n');
 	return (0);
