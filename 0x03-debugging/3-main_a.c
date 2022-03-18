@@ -24,4 +24,4 @@ int main(void)
     print_remaining_days(month, day, year);
 
     return (0);
-
+}
