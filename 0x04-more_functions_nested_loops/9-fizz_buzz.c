@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - main entry point 
+ * main - main entry point
  * Description: Print the numbers from 1 to 100
  * Print Fizz if divisible by 3 and Buzz if
  * divisible by 5
