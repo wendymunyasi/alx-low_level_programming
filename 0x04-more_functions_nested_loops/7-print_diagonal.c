@@ -4,14 +4,26 @@
  * @n: the int for the paramaters of my function
  * Return: 0
  */
-
-void print_line(int n)
+void print_diagonal(int n)
 {
-int i;
+int a = 0;
+int b = 0;
 
-for (i = 0; i < n; i++)
+if (n > 0)
 {
-_putchar(95);
+while (a < n)
+{
+while (b < a)
+{
+_putchar(' ');
+b++;
 }
+a++;
+b = 0;
+_putchar('\\');
+_putchar('\n');
+}
+}
+else
 _putchar('\n');
 }
