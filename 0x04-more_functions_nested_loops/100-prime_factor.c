@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - main entry point
-* Description: Function that prints prime numbers of 
+* Description: Function that prints prime numbers of
 * number
 * Return: 0
 */
