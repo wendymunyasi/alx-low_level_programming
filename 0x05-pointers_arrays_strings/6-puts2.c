@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-int string_lenth(char *);
+int string_lenth(char *str);
 
 /**
  * puts2 - A function that prints every character of string
@@ -10,28 +10,28 @@ int string_lenth(char *);
 void puts2(char *str)
 {
 	int i;
-	int len;
+	int len = 0;
 
 	len = string_length(str);
 
 	for (i = 0; i < len; i += 2)
 	{
-		putchar(i + '0');
+		putchar(str[i]);
 	}
-    putchar('\n');
+	putchar('\n');
 }
 
 /**
  * string_length - A function that prints length of string
- * @s: A string of characters
+ * @str: A string of characters
  * Return: length
  */
 
-int string_length(char *s)
+int string_length(char *str)
 {
 	int length = 0;
 
-	while (*(s + length) != '\0')
+	while (*(str + length) != '\0')
 		length++;
 
 	return (length);
