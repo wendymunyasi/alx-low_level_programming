@@ -13,11 +13,10 @@
 
 void randomPasswordGeneration(int N)
 {
-	char numbers[] = "0123456789";
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	char symbols[] = "!@#$^&*?";
-	char *password = (char *)malloc(20 * sizeof(char)); /* Stores the random password */
+	char letter[] = "agnorst";
+	char LETTER[] = "CT";
+	char symbols[] = "!";
+	char *password = (char *)malloc(20 * sizeof(char)); /* Stores the rand pass */
 	int i = 0;
 	int randomizer = 0;
 
@@ -28,25 +27,19 @@ void randomPasswordGeneration(int N)
 	{
 		if (randomizer == 1)
 		{
-			password[i] = numbers[rand() % 10];
+			password[i] = letter[rand() % 7];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else if (randomizer == 2)
 		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
+			password[i] = LETTER[rand() % 2];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else
 		{
-			password[i] = letter[rand() % 26];
+			password[i] = symbols[rand() % 1];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
