@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-
 /**
  * rev_string - function that reverses a string
  * string_length - function that reverses a string
@@ -25,8 +24,8 @@ void rev_string(char *s)
 	{
 		/**
 		 * The idea is to swap the beginning and end pointers
-		 * of the string. Instead of swapping the elements, here
-		 * , we will swap the pointers where the addresses of the
+		 * of the string. Instead of swapping the elements, here,
+		 * we will swap the pointers where the addresses of the
 		 * input string are stored.
 		 */
 
@@ -37,4 +36,20 @@ void rev_string(char *s)
 		begin++;
 		end--;
 	}
+}
+
+/**
+ * string_length - function that reverses a string
+ * @s: string to be reversed
+ * Return: 0 string in reversed
+ */
+
+int string_length(char *s)
+{
+	int length = 0;
+
+	while (*(s + length) != '\0')
+		length++;
+
+	return (length);
 }
