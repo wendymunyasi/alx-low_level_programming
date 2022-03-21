@@ -14,17 +14,15 @@
 void randomPasswordGeneration(int N)
 {
 	char numbers[] = "0123456789";
+	char letter[] = "abcdefghijklmnoqprstuvwyzx";
+	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	char symbols[] = "!@#$^&*?";
+	char password[N]; /* Stores the random password */
 	int i = 0;
 	int randomizer = 0;
 
 	/* Seed the random-number generator then create char arrays */
 	srand((unsigned int)(time(NULL)));
-
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	char symbols[] = "!@#$^&*?";
-
-	char password[N]; /* Stores the random password */
 
 	for (i = 0; i < N; i++)
 	{
