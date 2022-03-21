@@ -17,7 +17,7 @@ void randomPasswordGeneration(int N)
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 	char symbols[] = "!@#$^&*?";
-	char password[N]; /* Stores the random password */
+	char *password = (char *)malloc(20 * sizeof(char)); /* Stores the random password */
 	int i = 0;
 	int randomizer = 0;
 
