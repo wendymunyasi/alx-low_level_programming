@@ -28,19 +28,19 @@ void randomPasswordGeneration(int N)
 		if (randomizer == 1)
 		{
 			password[i] = letter[rand() % 7];
-			randomizer = rand() % 4;
+			randomizer = rand() % N;
 			printf("%c", password[i]);
 		}
 		else if (randomizer == 2)
 		{
 			password[i] = LETTER[rand() % 2];
-			randomizer = rand() % 4;
+			randomizer = rand() % N;
 			printf("%c", password[i]);
 		}
 		else
 		{
 			password[i] = symbols[rand() % 1];
-			randomizer = rand() % 4;
+			randomizer = rand() % N;
 			printf("%c", password[i]);
 		}
 	}
