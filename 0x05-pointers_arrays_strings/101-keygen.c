@@ -61,10 +61,16 @@ void randomPasswordGeneration(int N)
 int main(void)
 {
 	/* Length of the password to be generated */
-	int N = 10;
+	int *ptr;
+	int N;
+
+	for (N = 0; ; N++)
+	{
+		ptr = (int *)malloc(N * sizeof(int));
+	}
 
 	/* Function Call */
-	randomPasswordGeneration(N);
+	randomPasswordGeneration(*ptr);
 
 	putchar('\n');
 	return (0);
