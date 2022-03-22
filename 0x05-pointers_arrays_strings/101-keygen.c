@@ -8,28 +8,21 @@
  * randomPasswordGeneration - function to randomly generate
  * password of length N
  * @len: integer
- * @num: integer
  * Return: No return
  */
 
-void randomPasswordGeneration(int len, int num)
+void randomPasswordGeneration(int len)
 {
 	int temp;
 
 	srand((unsigned int)(time(0)));
 
-	while (num--)
-	{
-		temp = len;
-		printf("\n");
+	temp = len;
 		while (temp--)
 		{
 			putchar(rand() % 100 + 1);
 			srand(rand());
 		}
-		temp = len;
-	}
-	printf("\n");
 }
 
 /**
@@ -39,10 +32,9 @@ void randomPasswordGeneration(int len, int num)
  */
 int main(void)
 {
-	int len = 14;
-	int num = 1;
+	int len = 15;
 
-	randomPasswordGeneration(len, num);
+	randomPasswordGeneration(len);
 
 	return (0);
 }
