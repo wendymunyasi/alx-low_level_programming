@@ -5,36 +5,33 @@
 #include <time.h>
 
 /**
- * randomPasswordGeneration - function to randomly generate
+ * main - function to randomly generate
  * password of length N
- * @len: integer
- * Return: No return
+ * Return: 0
  */
 
-void randomPasswordGeneration(int len)
-{
-	int temp;
-
-	srand((unsigned int)(time(0)));
-
-	temp = len;
-		while (temp--)
-		{
-			putchar(rand());
-			srand(rand());
-		}
-}
-
-/**
- * main - function to call the void function
- *
- * Return: Always 0.
- */
 int main(void)
 {
-	int len = 14;
+	int pass[100];
+	int i, sum, n;
 
-	randomPasswordGeneration(len);
+	sum = 0;
+
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
+	{
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
+	}
 
 	return (0);
 }
