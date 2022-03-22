@@ -23,7 +23,7 @@ int main(void)
 				putchar((ones / 10) + 48);
 				putchar((ones % 10) + 48);
 				if (tens != 98 || ones != 99)
-					{
+				{
 					putchar(',');
 					putchar(' ');
 				}
