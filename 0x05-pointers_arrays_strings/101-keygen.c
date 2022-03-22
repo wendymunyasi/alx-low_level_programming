@@ -20,7 +20,7 @@ void randomPasswordGeneration(int len)
 	temp = len;
 		while (temp--)
 		{
-			putchar(rand() % 100 + 1);
+			putchar(rand());
 			srand(rand());
 		}
 }
@@ -32,7 +32,7 @@ void randomPasswordGeneration(int len)
  */
 int main(void)
 {
-	int len = 15;
+	int len = 14;
 
 	randomPasswordGeneration(len);
 
