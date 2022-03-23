@@ -17,8 +17,8 @@ char *string_toupper(char *string)
 		if (*(string + i) >= 'a' && *(string + i) <= 'z')
 		{
 			*(string + i) -= OFFSET;
-			i++;
 		}
+		i++;
 	}
 	return (string);
 }
