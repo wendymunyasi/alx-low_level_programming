@@ -3,38 +3,22 @@
 #include "main.h"
 
 /**
- * aay_reversal - function that reverses an aay
- *
- * Return: 0 (Success)
+ * reverse_array - function that reverses an array
+ * @a: the array to reverse
+ * @n: size of elements in the array
  */
 
 void reverse_array(int *a, int n)
 {
-    int i, temp;
+	int i, temp;
 
-    n = 10;
+	i = temp = 0;
+	n -= 1;
 
-    /* Reading aay using aay itself as a pointer */
-   
-
-    printf("\nOriginal aay is: \n");
-    for(i=0;i< n;i++)
-    {
-        printf(" %d\t", *(a+i));
-    }
-
-    /* Reversing aay */
-    for(i=0;i< n/2;i++)
-    {
-        temp = *(a + i);
-        *(a + i) = *(a + n -1 -i);
-        *(a + n -1 -i) = temp;
-    }
-
-    /* Displaying reversed aay content */
-    printf("\nReversed aay is: \n");
-    for(i=0;i< n;i++)
-    {
-        printf(" %d\t", *(a+i));
-    }
+	while (i <= n)
+	{
+		temp = a[n];
+		a[n--] = a[i];
+		a[i++] = temp;
+	}
 }
