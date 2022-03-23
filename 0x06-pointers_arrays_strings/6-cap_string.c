@@ -10,28 +10,17 @@
 char *cap_string(char *string)
 {
 	const char OFFSET = 'a' - 'A';
-	int i = 0;
+	int j, i = 1;
+	char sep[] = " \t\n,;.!?\"(){}";
 
-	while (string[i])
+	i = 1;
+	if (string[0] >= 'a' && string[0] <= 'z')
+		string[0] -= OFFSET;
+	while (string[i] != '\0')
 	{
-		if ((i - 1 == 0 && string[i] != ' ' && string[i] != ',' && string[i] != ';'
-			&& string[i] != '.' && string[i] != '!' && string[i] != '?'
-			&& string[i] != '"'	&& string[i] != '(' && string[i] != ')'
-			&& string[i] != '{' && string[i] != '}' && string[i] != '\n'
-			&& string[i] != '\t')
-			
-		/**
-		 * string[i - 1] means the previous character and this
-		 * program is accessing an array out of bounds which is an undefined
-		 * behavior
-		 */
-			|| (string[i - 1] >= 'a' && string[i - 1] <= 'z')
-			|| (string[i - 1] >= 'A' && string[i - 1] <= 'Z')
-			|| (string[i - 1] >= '1' && string[i - 1] <= '9'))
-		{
-		}
-		else if (string[i] >= 'a' && string[i] <= 'z')
-			string[i] -= OFFSET;
+		for (j = 0; sep[j] != '\0'; j++)
+			if (string[i - 1] == sep[j] && (string[i] >= 'a' && string[i] <= 'z'))
+				string[i] -= OFFSET;
 		i++;
 	}
 	return (string);
