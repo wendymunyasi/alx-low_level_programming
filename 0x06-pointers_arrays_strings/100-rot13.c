@@ -9,7 +9,7 @@
 
 char *rot13(char *string)
 {
-	int i, j;
+	int i = 0, j;
 	char alphabeticos[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
