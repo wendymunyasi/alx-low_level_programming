@@ -17,7 +17,7 @@ char *rot13(char *string)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (*(string + i) == alphabeticos[i])
+			if (*(string + i) == alphabeticos[j])
 			{
 				*(string + i) = rot13[j];
 				break;
