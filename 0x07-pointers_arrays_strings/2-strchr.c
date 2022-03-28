@@ -9,19 +9,18 @@
  * Return:  a pointer to first occurence of c
  */
 
+
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 	char *null = NULL;
-
-	/* loop through the string 8*/
+	/* loop through the string s */
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		/* check if a characer at particular index = c */
 		if (s[i] == c)
 			return (s + i);
 	}
-
 	if (s[i] == '\0')
 		return (s + i);
 	else
