@@ -14,13 +14,17 @@ char *_strchr(char *s, char c)
 	int i = 0;
 
 	/* loop through the string 8*/
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		/* check if a characer at particular index = c */
-		if (*(s + i) == c)
-		return (s + i);
-
-		i++;
+		if (s[i] == c)
+			return (s + i);
 	}
+
+	if (s[i] == '\0')
+		return (s + i);
+	else
+		return (NULL);
+		
 	return (0);
 }
