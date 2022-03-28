@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	int i = 0;
 
 	/* loop through the string 8*/
-	while (*s)
+	while (*s != '\0')
 	{
 		/* check if a characer at particular index = c */
 		if (*(s + i) == c)
