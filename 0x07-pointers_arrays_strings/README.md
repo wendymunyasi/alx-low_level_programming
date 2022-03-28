@@ -16,7 +16,7 @@ Tel: *+254707240068.*
 *   No more than 5 functions per file.
 *   You are not allowed to use the standard library unless stated otherwise. Any use of functions like  `printf`, `puts`, etc… is forbidden.
 *   You are allowed to use `_putchar` .
-*   The main.c files are used to test your functions, but you don’t have to push them to your repo.
+*   The `main.c` files are used to test your functions, but you don’t have to push them to your repo.
 *   The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called `main.h` .
 
 
