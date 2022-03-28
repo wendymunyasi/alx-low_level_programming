@@ -18,9 +18,8 @@ char *_strchr(char *s, char c)
 	{
 		/* check if a characer at particular index = c */
 		if (*(s + i) == c)
-		{
-			return (s + i);
-		}
+		return (s + i);
+
 		i++;
 	}
 	return (0);
