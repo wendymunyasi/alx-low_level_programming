@@ -12,17 +12,17 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *null = NULL;
-	/* loop through the string s */
-	for (i = 0; s[i] != '\0'; i++)
+	unsigned int i = 0;
+
+	/* loop through string s */
+	for (; *(s + i) != '\0'; i++)
 	{
-		/* check if a characer at particular index = c */
-		if (s[i] == c)
+		/* check if a character in s is in c */
+		if (*(s + i) == c)
 			return (s + i);
 	}
-	if (s[i] == '\0')
+	if (*(s + i) == c)
 		return (s + i);
-	else
-		return (null);
+
+	return ('\0');
 }
