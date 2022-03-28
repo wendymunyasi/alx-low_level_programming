@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < max_size; i += size + 1)
 		prinDiagonalSum += a[i];
 
-	for (i = 0; i < max_size - 1; i += size - 1)
+	for (i = size - 1; i < max_size - 1; i += size - 1)
 		secDiagonalSum += a[i];
 
 	printf("%d, %d\n", prinDiagonalSum, secDiagonalSum);
