@@ -12,6 +12,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+	char *null = NULL;
 
 	/* loop through the string 8*/
 	for (i = 0; s[i] != '\0'; i++)
@@ -24,5 +25,5 @@ char *_strchr(char *s, char c)
 	if (s[i] == '\0')
 		return (s + i);
 	else
-		return (NULL);
+		return (null);
 }
