@@ -11,6 +11,7 @@ int _sqr_root(int n, int j);
 int _sqrt_recursion(int n);
 int is_divisible(int num, int div);
 int is_prime_number(int n);
+int checker(char *s, int length, int a);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 
