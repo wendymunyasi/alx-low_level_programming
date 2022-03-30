@@ -7,7 +7,7 @@
  * @s: pointer to the null-terminated byte string to be examined.
  * @length: highest index of string.
  * @a: lowest index of string.
- * 
+ *
  * Return: 1 if true, 0 if not.
  */
 
