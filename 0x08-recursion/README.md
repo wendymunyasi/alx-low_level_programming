@@ -1,5 +1,5 @@
 # Project Name
-**0x07. C - Even more pointers, arrays and strings**
+**0x08. C - Recursion**
 
 ## Author's Details
 Name: *Wendy Munyasi.*
@@ -24,7 +24,7 @@ Tel: *+254707240068.*
 
 
 ### Project Description
-Pointers, arrays and strings.
+Recursion in C.
 
 * **0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget** - Write a function that prints a string, followed by a new line. - `0-puts_recursion.c`.
 * **1. Why is it so important to dream? Because, in my dreams we are together** - Write a function that prints a string in reverse. - `1-print_rev_recursion.c`.
