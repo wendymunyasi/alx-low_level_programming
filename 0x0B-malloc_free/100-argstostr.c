@@ -5,7 +5,7 @@
 /**
  * argstostr - function that concatenates all the arguments of a program.
  * @ac: count of arguments.
- * @av: poinet to the arguments.
+ * @av: pointer to the arguments.
  *
  * Returns NULL if ac == 0 or av == NULL.
  *
