@@ -2,6 +2,25 @@
 #include <stdlib.h>
 #include "main.h"
 
+
+/**
+ * ch_free_grid - frees a 2 dimensional array.
+ * @grid: multidimensional array of char.
+ * @height: height of the array.
+ *
+ * Return: No return
+ */
+void ch_free_grid(char **grid, unsigned int height)
+{
+	if (grid != NULL && height != 0)
+	{
+		for (; height > 0; height--)
+			free(grid[height]);
+		free(grid[height]);
+		free(grid);
+	}
+}
+
 /**
  * strtow - function that  splits a string into words.
  * @str: pointer to the string to split.
@@ -13,44 +32,41 @@
 
 char **strtow(char *str)
 {
-	char **array;
-	int i = 0, j, m, k = 0, len = 0, count = 0;
+char **array;
+	unsigned int c, height, i, j, a1;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (; str[i]; i++)
+	for (c = height = 0; str[c] != '\0'; c++)
+		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
+			height++;
+	array = malloc((height + 1) * sizeof(char *));
+	if (array == NULL || height == 0)
 	{
-		if ((str[i] != ' ' || *str != '\t') &&
-				((str[i + 1] == ' ' || str[i + 1] == '\t') || str[i + 1] == '\n'))
-			count++;
+		free(array);
+		return (NULL);
 	}
-	if (count == 0)
-		return (NULL);
-	array = malloc(sizeof(char *) * (count + 1));
-	if (array == NULL)
-		return (NULL);
-
-	for (i = 0; str[i] != '\0' && k < count; i++)
+	for (i = a1 = 0; i < height; i++)
 	{
-		if (str[i] != ' ' || str[i] != '\t')
+		for (c = a1; str[c] != '\0'; c++)
 		{
-			len = 0;
-			j = i;
-			while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
-				j++, len++;
-			array[k] = malloc((len + 1) * sizeof(char));
-			if (array[k] == NULL)
+			if (str[c] == ' ')
+				a1++;
+			if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			{
-				for (k = k - 1; k >= 0; k++)
-					free(array[k]);
-				free(array);
-				return (NULL);
+				array[i] = malloc((c - a1 + 2) * sizeof(char));
+				if (array[i] == NULL)
+				{
+					ch_free_grid(array, i);
+					return (NULL);
+				}
+				break;
 			}
-			for (m = 0; m < len; m++, i++)
-				array[k][m] = str[i];
-			array[k++][m] = '\0';
 		}
+		for (j = 0; a1 <= c; a1++, j++)
+			array[i][j] = str[a1];
+		array[i][j] = '\0';
 	}
-	array[k] = NULL;
+	array[i] = NULL;
 	return (array);
 }
