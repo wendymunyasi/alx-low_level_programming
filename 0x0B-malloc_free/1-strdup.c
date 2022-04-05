@@ -3,24 +3,32 @@
 #include "main.h"
 
 /**
- * create_array - unction that creates an array of chars, and initializes,
- * it with a specific char.
- * @size: size of array to create.
- * @c: specific character to initialize array with.
+ * *_strdup - function that returns a pointer to a newly allocated space,
+ * in memory, which contains a copy of the string given as a parameter.
+ * @str: string to be duplicated.
  *
- * Return: NULL if size = 0 (fails) or pointer to the array (success).
+ * Return: NULL (fail) or a pointer to the duplicated string (success).
+ * Also return NULL if str = NULL or insufficient memory is available.
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	char *buffer = malloc(sizeof(c) * size);
-	unsigned int i;
+	char *dupStr;
+	unsigned int i, j;
 
-	if (size == 0 || buffer == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
-		buffer[i] = c;
+	for (i = 0; str[i] != '\0'; i++)
+	;
 
-	return (buffer);
+	dupStr = (char *)malloc(sizeof(char) * (i + 1));
+
+	if (dupStr == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		dupStr[j] = str[j];
+
+	return (dupStr);
 }
