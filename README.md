@@ -31,7 +31,7 @@ All of the following folders are projects done during the studies:
 | [`0x09. C - Static libraries`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x09-static_libraries) | It aims to learn about static libraries, how to create one and how to use it in **C language**.|
 | [`0x0A. C - argc, argv`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0A-argc_argv) | It aims to learn about how to use arguments passed to your program in **C language**.|
 | [`0x0B. C - malloc, free`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0B-malloc_free) | It aims to learn about how to use `valgrind`, `malloc` and `free` in **C language**.|
-
+| [`0x0C. C - malloc, free`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0C-malloc_free) | It aims to learn more about how to use `valgrind`, `malloc` and `free` in **C language**.|
 
 ### Collaborate
 
