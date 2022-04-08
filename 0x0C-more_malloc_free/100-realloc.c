@@ -7,7 +7,7 @@
  * malloc: malloc(old_size)
  * @old_size: size, in bytes, of the allocated space for ptr.
  * @new_size: new size, in bytes of the new memory block.
- * 
+ *
  * The contents will be copied to the newly allocated space, in the,
  * range from the start of ptr up to the minimum of the old and new sizes.
  * If new_size > old_size, the “added” memory should not be initialized.
