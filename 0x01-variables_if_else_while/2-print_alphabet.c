@@ -9,12 +9,15 @@
 
 int main(void)
 {
-int x;
-int lower_x;
-for (x = 'A'; x <= 'Z'; x++)
-{
-lower_x = tolower(x);
-putchar(lower_x);
+	int x;
+	int lower_x;
+
+	for (x = 'A'; x <= 'Z'; x++)
+	{
+		lower_x = tolower(x);
+		putchar(lower_x);
+	}
+		putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-return (0); }

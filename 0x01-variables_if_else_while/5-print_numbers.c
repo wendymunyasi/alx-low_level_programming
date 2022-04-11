@@ -2,8 +2,9 @@
 #include <ctype.h>
 
 /**
- * main - Entry point
- * Description: prints all alphabet in lower case
+ * main - Program that prints all single digit numbers of base 10 starting,
+ * from 0, followed by a new line.
+ *
  * Return: 0
 */
 
@@ -11,7 +12,9 @@ int main(void)
 {
 int i;
 
-for (i = 0; i <= 9; i++)
-printf("%i", i);
-printf("\n");
-return (0); }
+	for (i = 0; i <= 9; i++)
+		printf("%i", i);
+	printf("\n");
+
+	return (0);
+}
