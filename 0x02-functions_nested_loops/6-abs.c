@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * _abs- A fucntion that computes the absolute
- * value of an integer
- * @n: integer number
+ * _abs- Function that computes the absolute value of an integer.
+ * @n: integer value.
+ *
  * Return: 0 or 1 depending on the answer
 */
 

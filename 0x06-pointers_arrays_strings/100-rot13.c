@@ -2,9 +2,15 @@
 #include "main.h"
 
 /**
- * rot13 - function that encodes a string into 1337
- * @string: string to be encoded using rot13
- * Return: the encoded string
+ * rot13 - function that encodes a string into using rot13.
+ * @string: pointer to string to be encoded.
+ *
+ * You can only use if statement once in your code.
+ * You can only use two loops in your code.
+ * You are not allowed to use switch.
+ * You are not allowed to use any ternary operation.
+ *
+ * Return: the encoded string.
  */
 
 char *rot13(char *string)

@@ -3,10 +3,13 @@
 #include "main.h"
 
 /**
- * string_toupper - function to convert string to upper
- * @string: string to be converted to upper
- * Return: the string
+ * string_toupper - function that changes all lowercase letters of a string,
+ * to uppercase.
+ * @string: pointer to string to be converted to upper.
+ *
+ * Return: the string in upper case.
  */
+
 char *string_toupper(char *string)
 {
 	const char OFFSET = 'a' - 'A';

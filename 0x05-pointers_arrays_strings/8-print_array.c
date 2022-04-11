@@ -2,9 +2,17 @@
 #include "main.h"
 
 /**
- * print_array - Function that prints an array of integers
- * @n: number of elements to be printed
- * @a: an array of integers
+ * print_array - Function that prints n elements of an array of integers,
+ * followed by a new line.
+ * @n: number of elements of array to be printed.
+ * @a: Pointer to array of integers.
+ *
+ * Numbers must be separated by comma, followed by a space.
+ * The numbers should be displayed in the same order as they are stored,
+ * in the array.
+ * You are allowed to use printf.
+ *
+ * Return: No return.
  */
 
 void print_array(int *a, int n)

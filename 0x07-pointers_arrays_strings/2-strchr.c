@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- **_strchr - function that locates a character in a string
- * @s: pointer to the null-terminated byte string to be analyzed
- * @c: character to search for
+ **_strchr - function that locates a character in a string.
+ * @s: pointer to the null-terminated byte string to be analyzed.
+ * @c: character to search for.
  *
- * Return:  a pointer to first occurence of c
+ * Return:  a pointer to first occurence of c.
  */
 
 

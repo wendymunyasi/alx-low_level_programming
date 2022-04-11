@@ -2,10 +2,12 @@
 #include "main.h"
 
 /**
- * print_alphabet - Prints the alphabet in lowercase.
- * Description: prints alphabets is lower case followed
- * by new line
- * Return: 0
+ * print_alphabet - Function that prints the alphabet, in lowercase,
+ * followed by a new line.
+ *
+ * You can only use _putchar twice in your code.
+ *
+ * Return: 0.
 */
 
 void print_alphabet(void)

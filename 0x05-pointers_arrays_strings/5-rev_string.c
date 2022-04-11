@@ -3,10 +3,10 @@
 int string_length(char *s);
 
 /**
- * rev_string - function that reverses a string
- * string_length - function that reverses a string
- * @s: string to be reversed
- * Return: 0 string in reversed
+ * rev_string - Function that reverses a string.
+ * @s: Pointer to the string to be reversed.
+ *
+ * Return: No return.
  */
 
 void rev_string(char *s)
@@ -40,9 +40,10 @@ void rev_string(char *s)
 }
 
 /**
- * string_length - function that reverses a string
- * @s: string to be reversed
- * Return: 0 string in reversed
+ * string_length - Function that returns string length.
+ * @s: Pointer to the string return length.
+ *
+ * Return: The length of the string.
  */
 
 int string_length(char *s)

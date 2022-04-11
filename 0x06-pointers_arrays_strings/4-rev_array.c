@@ -3,9 +3,11 @@
 #include "main.h"
 
 /**
- * reverse_array - function that reverses an array
- * @a: the array to reverse
- * @n: size of elements in the array
+ * reverse_array - function that reverses an array.
+ * @a: pointer to the array to reverse.
+ * @n: size of elements in the array.
+ *
+ * Return: No return.
  */
 
 void reverse_array(int *a, int n)

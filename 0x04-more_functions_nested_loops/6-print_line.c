@@ -1,8 +1,13 @@
 #include "main.h"
 /**
- ** print_line - print character ' _'
- ** @n: number of time to print character
- ** Return: 0 (success)
+ * print_line - Function that draws a straight line in the terminal.
+ * @n: number of times to print _ character.
+ *
+ * You can only use _putchar function to print.
+ * The line should end with a \n.
+ * If n is 0 or less, the function should only print \n.
+ *
+ * Return: No return.
  */
 
 void print_line(int n)

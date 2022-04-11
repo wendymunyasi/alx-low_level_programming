@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- **_strpbrk - function that searches a string for any of a set of bytes
- * @s: pointer to the null-terminated byte string to be analyzed
- * @accept: pointer to the null-terminated byte string that contains the
- * characters to search for
+ **_strpbrk - function that searches a string for any of a set of bytes.
+ * @s: pointer to the null-terminated byte string to be analyzed.
+ * @accept: pointer to the null-terminated byte string that contains the,
+ * characters to search for.
  *
  * Return:  pointer to the byte in s that matches one of the bytes in accept,
- * or NULL if no such byte is found
+ * or NULL if no such byte is found.
  */
 
 char *_strpbrk(char *s, char *accept)

@@ -3,8 +3,11 @@
 int string_lenth(char *str);
 
 /**
- * puts2 - A function that prints every character of string
- * @str: A string of characters
+ * puts2 - A function that prints every character of a string, starting with,
+ * the first character, followed by a new line.
+ * @str: Pointer to the string of characters.
+ *
+ * Return: No return.
  */
 
 void puts2(char *str)
@@ -23,7 +26,8 @@ void puts2(char *str)
 
 /**
  * string_length - A function that prints length of string
- * @str: A string of characters
+ * @str: Pointer to the string of characters.
+ *
  * Return: length
  */
 

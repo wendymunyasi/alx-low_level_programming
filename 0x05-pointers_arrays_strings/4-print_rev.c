@@ -3,9 +3,10 @@
 #include "main.h"
 
 /**
- * print_rev - function that prints a string in rev
- * @s: character
- * Return: 0
+ * print_rev - function that prints a string in reverse followed by a new line.
+ * @s: Pointer to the string to be reversed.
+ *
+ * Return: No return.
  */
 
 void print_rev(char *s)

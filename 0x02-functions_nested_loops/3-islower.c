@@ -3,10 +3,11 @@
 #include "main.h"
 
 /**
- * _islower - Checks if the lettr c is in lowercase
- * Description: Checks if the lettr c is in lowercase
- * Return: 0 or 1 depending on the answer
- * @c: just a letter
+ * _islower - Function that checks for lowercase character.
+ * @c: character to classify.
+ *
+ * Return: 1 if c is lowercase or otherwise 0.
+ *
 */
 
 int _islower(int c)

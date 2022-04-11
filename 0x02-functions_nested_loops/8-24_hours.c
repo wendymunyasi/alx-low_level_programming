@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * jack_bauer- A fucntion that prints time from
- * 00:00 to 24:00
- * Return: 0 or 1 depending on the answer
+ * jack_bauer - Function that prints time from 00:00 to 24:00.
+ *
+ * Return: No return.
 */
 
 void jack_bauer(void)

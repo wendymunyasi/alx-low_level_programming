@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * cap_string - func to capitalize words of a string
- * @string: string to be capitalized
+ * cap_string - func to capitalize all words of a string.
+ * @string: pointer to string to be capitalized.
+ *
  * Return: the capitalized string
  */
 

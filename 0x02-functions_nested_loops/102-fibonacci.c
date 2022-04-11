@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - main entry point for the function
- * Description: Prints the first fabionacci numbers
- * Return: 0 if successful
+ * main - Program that prints the first 50 Fibonacci numbers, starting with,
+ * 1 and 2, followed by a new line.
+ *
+ * The numbers must be separated by comma, followed by a space , .
+ * You are allowed to use the standard library.
+ *
+ * Return: 0 if successful.
  */
 
 int main(void)

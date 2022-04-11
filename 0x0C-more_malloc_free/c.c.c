@@ -4,7 +4,7 @@
 
 /**
  * main - program that multiplies two positive numbers.
- * 
+ *
  * Usage: mul num1 num2
  * num1 and num2 will be passed in base 10.
  * Print the result, followed by a new line.
@@ -22,6 +22,6 @@
 
 int main(int argc, char *argv[])
 
-{	
-	
+{
+
 }

@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * compare - function that compares two strings
+ * compare - function that compares two strings.
  * @haystack: pointer to the first null-terminated byte string.
  * @needle: pointer to the second null-terminated byte string.
  *
- * Return: true if haystack and needle are the same
+ * Return: true if haystack and needle are the same.
  */
 
 int compare(char *haystack, char *needle)
