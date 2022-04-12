@@ -2,10 +2,9 @@
 #define _DOG_H_
 
 /**
- * @dog_type - typedef for struct dog
+ * @dog_type - typedef for struct dog.
  *
  */
-
 typedef struct dog dog_type;
 
 /**
@@ -14,7 +13,6 @@ typedef struct dog dog_type;
  * @age: age of the dog.
  * @owner: pointer to owner of the dog.
  */
-
 struct dog
 {
 	char *name;
