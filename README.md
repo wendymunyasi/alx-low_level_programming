@@ -31,7 +31,10 @@ All of the following folders are projects done during the studies:
 | [`0x09. C - Static libraries`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x09-static_libraries) | It aims to learn about static libraries, how to create one and how to use it in **C language**.|
 | [`0x0A. C - argc, argv`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0A-argc_argv) | It aims to learn about how to use arguments passed to your program in **C language**.|
 | [`0x0B. C - malloc, free`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0B-malloc_free) | It aims to learn about how to use `valgrind`, `malloc` and `free` in **C language**.|
-| [`0x0C. C - malloc, free`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0C-malloc_free) | It aims to learn more about how to use `valgrind`, `malloc` and `free` in **C language**.|
+| [`0x0C. C - More malloc, free`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0C-more_malloc_free) | It aims to learn more about how to use `exit`, `calloc` and `realloc` in **C language**.|
+| [`0x0D. C - Preprocessor`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0D-preprocessor) | It aims to learn about macros, the **CPP**, the CPP directives, and how to include header guard in your files in **C language**.|
+| [`0x0E. C - Structures, typedef`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0E-structures_typedef) | It aims to learn what structures are, when and how to use them and how to use `typedef` in **C language**.|
+| [`0x0F. C - Function pointers`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0F-function_pointers) | It aims to learn about function pointers, what exactly it holds and what it points to in the virtual memory in **C language**.|
 
 ### Collaborate
 

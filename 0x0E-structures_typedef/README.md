@@ -1,5 +1,5 @@
 # Project Name
-**0x0D. C - Preprocessor**
+**0x0E. C - Structures, typedef**
 
 ## Author's Details
 Name: *Wendy Munyasi.*
