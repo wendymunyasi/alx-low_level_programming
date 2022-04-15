@@ -35,6 +35,8 @@ All of the following folders are projects done during the studies:
 | [`0x0D. C - Preprocessor`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0D-preprocessor) | It aims to learn about macros, the **CPP**, the CPP directives, and how to include header guard in your files in **C language**.|
 | [`0x0E. C - Structures, typedef`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0E-structures_typedef) | It aims to learn what structures are, when and how to use them and how to use `typedef` in **C language**.|
 | [`0x0F. C - Function pointers`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x0F-function_pointers) | It aims to learn about function pointers, what exactly it holds and what it points to in the virtual memory in **C language**.|
+| [`0x10. C - Variadic functions`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x10-variadic_functions) | It aims to learn about variadic functions and how to use the `const` type qualifier in **C language**.|
+
 
 ### Collaborate
 
