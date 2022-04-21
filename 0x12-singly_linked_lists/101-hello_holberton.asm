@@ -12,8 +12,8 @@
 ; int main(void)
 ; {
 ; 	char msg[] = "Hello, Holberton";
-;   printf("%s\n",msg);
-;   return (0);
+;   	printf("%s\n",msg);
+;   	return (0);
 ; }
 
 ; Declare needed C functions
