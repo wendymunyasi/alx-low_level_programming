@@ -36,10 +36,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		new_node->next = *head; /*this step isn't needed really */
 		*head = new_node;
-	} 
+	}
 	else
-	{	/* the new node is going to be the last node so make next,
-		of it as NULL */
+	{	/**
+		 * the new node is going to be the last node so make next,
+		 * of it as NULL
+		 */
 		new_node->next = NULL;
 		last = *head;
 		/* traverse till last node */
