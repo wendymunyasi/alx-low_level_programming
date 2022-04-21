@@ -19,11 +19,11 @@
 ; Declare needed C functions
 			extern printf               ; the C function to be called
 
-			section .data               ; Data section, initialized variables
+			SECTION .data               ; Data section, initialized variables
 message:    db "Hello, Holberton", 0    ; strings must be terminated with 0 in C
 format:     db "%s", 10, 0              ; the printf format, "\n", '0'
 
-			section .text
+			SECTION .text
 
 			global main
 main:                                   ; the program label for the entry point
