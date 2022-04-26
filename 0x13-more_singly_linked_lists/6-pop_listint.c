@@ -4,7 +4,6 @@
 /**
  * pop_listint - function that deletes the head node of a listint_t,
  * linked list.
- * listint_t linked list.
  * @head: pointer to pointer to the head of linked list.
  *
  * Make sure there is no memory leaks.
