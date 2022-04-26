@@ -7,7 +7,7 @@
  * @head: pointer to pointer to the head of linked list.
  * @idx: index of the list where the new node should be added.
  * @n: value of the new node.
- * 
+ *
  * if it is not possible to add the new node at index idx, do not,
  * add the new node and return NULL.
  *
@@ -30,18 +30,18 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		new_node->next = *head;
 		*head = new_node;
-		return(new_node);
+		return (new_node);
 	}
-	else 
+	else
 	{
 		temp_variable = *head;
 		/* traverse list till nth node */
-		while(--idx)
-			temp_variable= temp_variable->next;
+		while (--idx)
+			temp_variable = temp_variable->next;
 		/* assign new_node next to match temp_variable */
 		new_node->next = temp_variable->next;
 		/* assign nth node's next to this new node */
 		temp_variable->next = new_node;
-		return(new_node);
+		return (new_node);
 	}
 }
