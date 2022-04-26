@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * get_nodeint_at_index - function that deletes the head node of a listint_t,
+ * pop_listint - function that deletes the head node of a listint_t,
  * linked list.
  * listint_t linked list.
  * @head: pointer to pointer to the head of linked list.
@@ -14,14 +14,14 @@
 
 int pop_listint(listint_t **head)
 {
-    listint_t *temp_variable; /* keep track of current head */
-    int data = 0;
+	listint_t *temp_variable; /* keep track of current head */
+	int data = 0;
 
-    if (head == NULL || *head == NULL)
-        return (0);
-    temp_variable = *head; /* stores the pointer to temp_variable head */
-    data = temp_variable->n;
-    *head = (*head)->next;
-    free(temp_variable);
-    return (data);
+	if (head == NULL || *head == NULL)
+		return (0);
+	temp_variable = *head; /* stores the pointer to temp_variable head */
+	data = temp_variable->n;
+	*head = (*head)->next;
+	free(temp_variable);
+	return (data);
 }
