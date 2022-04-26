@@ -22,5 +22,5 @@ void free_listint(listint_t *head)
 	free_listint(head->next);
 	/* then free head */
 	free(head);
-	/* elegante, eh 👏*/
+	/* elegante, eh? muy bien. 👏*/
 }
