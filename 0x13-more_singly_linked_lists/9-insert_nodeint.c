@@ -16,31 +16,38 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new_node, *temp_variable;
-
-	/* if there is no list return NULL */
+	listint_t *new_node, *traverse;
+	unsigned int i = 0;
+	/* if there is no list return null */
 	if (head == NULL)
 		return (NULL);
-	/* create new node */
+	/* create the new node */
 	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+		return (NULL);
+
 	new_node->n = n;
-	/* instert first node */
+
 	if (idx == 0)
 	{
 		new_node->next = *head;
 		*head = new_node;
 		return (new_node);
 	}
-	else
+
+	traverse = *head;
+	while (i != idx - 1 && traverse != NULL)
 	{
-		temp_variable = *head;
-		/* traverse list till nth node */
-		while (--idx)
-			temp_variable = temp_variable->next;
-		/* assign new_node next to match temp_variable */
-		new_node->next = temp_variable->next;
-		/* assign nth node's next to this new node */
-		temp_variable->next = new_node;
+		traverse = traverse->next;
+		i++;
+	}
+
+	if (i == idx - 1 && traverse != NULL)
+	{
+		new_node->next = traverse->next;
+		traverse->next = new_node;
 		return (new_node);
 	}
+
+	return (NULL);
 }
