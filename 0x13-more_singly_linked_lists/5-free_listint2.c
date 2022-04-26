@@ -24,5 +24,4 @@ void free_listint2(listint_t **head)
 		free(temp_variable);
 	}
 	/* *head = NULL; */ /* not needed */
-	/* make sure that value at head is null */
 }
