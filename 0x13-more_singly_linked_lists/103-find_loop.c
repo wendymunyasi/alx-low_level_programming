@@ -20,9 +20,6 @@ listint_t *find_listint_loop(listint_t *head)
 	/* let slow and fast be two node pointers pointing to the head node */
 	slow = fast = head;
 
-	if (!head)
-		return (0);
-
 	while (slow && fast && fast->next)
 	{
 		/* in every iteration slow ptr moves ahead by one node */
