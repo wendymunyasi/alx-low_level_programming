@@ -31,11 +31,11 @@ listint_t *reverse_listint(listint_t **head)
 
 	else if (*head && (*head)->next)
 	{
-		listint_t *current = *head;
+		listint_t *temp_variable = *head;
 		*head = (*head)->next;
 		reverse_listint(head);
-		current->next->next = current;
-		current->next = NULL;
+		temp_variable->next->next = current;
+		temp_variable->next = NULL;
 	}
 	return (*head);
 }
