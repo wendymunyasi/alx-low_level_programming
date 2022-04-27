@@ -31,6 +31,7 @@ listint_t *reverse_listint(listint_t **head)
 
 	else if (*head && (*head)->next)
 	{
+		listint_t *current = *head;
 		*head = (*head)->next;
 		reverse_listint(head);
 		current->next->next = current;
