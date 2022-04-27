@@ -33,7 +33,7 @@ listint_t *find_listint_loop(listint_t *head)
 		if (slow == fast)
 		{
 			/* return the head */
-			return (head);
+			return (head); /* return 1 */
 		}
 		/* return NULL if there is no loop meaning the ptrs did not meet */
 		return (NULL);
