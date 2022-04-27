@@ -16,14 +16,16 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *current = *head;
 
+	/* check if the next field of current is null */
 	if (current->next == NULL)
 	{
+		/* make pointer to head as current and return it */
 		*head = current;
 		return (*head);
 	}
 
-	if (*head && (*head)->next)
-		{
+	else if (*head && (*head)->next)
+	{
 		*head = (*head)->next;
 		reverse_listint(head);
 		current->next->next = current;
@@ -31,3 +33,4 @@ listint_t *reverse_listint(listint_t **head)
 	}
 	return (*head);
 }
+
