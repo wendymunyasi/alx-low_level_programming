@@ -38,4 +38,5 @@ listint_t *find_listint_loop(listint_t *head)
 		/* return NULL if there is no loop meaning the ptrs did not meet */
 		return (NULL);
 	}
+	return (0);
 }
