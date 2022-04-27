@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * listint_t - function that reverses a listint_t linked list.
+ * reverse_listint - function that reverses a listint_t linked list.
  * @head: pointer to pointer to the head of linked list.
  *
  * You are not allowed to use more than 1 loop.
@@ -16,7 +16,7 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *previous;
 	listint_t *current = *head;
-	
+
 	/* traverse the list */
 	while (current != NULL)
 	{
