@@ -9,6 +9,8 @@
  * You are not allowed to use malloc, free or arrays.
  * You can only declare a maximum of two variables in your function.
  *
+ * There should be no memory leaks.
+ *
  * Return:  the pointer to first node.
  */
 
