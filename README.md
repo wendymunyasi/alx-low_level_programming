@@ -38,7 +38,7 @@ All of the following folders are projects done during the studies:
 | [`0x10. C - Variadic functions`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x10-variadic_functions) | It aims to learn about variadic functions and how to use the `const` type qualifier in **C language**.|
 | [`0x11. C - printf`](https://github.com/wendymunyasi/printf) | It aims to learn about creating your own printf function in **C language**.|
 | [`0x12. C - Singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x12-singly_linked_lists) | It aims to learn about singly linked lists in **C language**.|
-| [`0x13. C - Singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x13-singly_linked_lists) | It aims to learn more about singly linked lists in **C language**.|
+| [`0x13. C - Singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | It aims to learn more about singly linked lists in **C language**.|
 
 
 ### Collaborate
