@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * find_listint_loop - function that reverses a listint_t linked list.
+ * find_listint_loop - function that finds the loop in a linked list.
  * @head: pointer to the head of linked list.
  *
  * You are not allowed to use malloc, free or arrays.
