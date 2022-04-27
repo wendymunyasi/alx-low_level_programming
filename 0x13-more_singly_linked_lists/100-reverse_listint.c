@@ -14,20 +14,20 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *previous;
 	listint_t *current = *head;
 
-	/* traverse the list */
-	while (current != NULL)
+	if (current->next == NULL)
 	{
-		struct listint_s *next = current->next;
-		/* fix the current node */
-		current->next = previous;
-		/* adjust the two pointers */
-		previous = current;
-		current = next;
+		*head = current;
+		return (*head);
 	}
-	/* fix the head pointer to point to the new front */
-	*head = previous;
+
+	if (*head && (*head)->next)
+		{
+		*head = (*head)->next;
+		reverse_listint(head);
+		current->next->next = current;
+		current->next = NULL;
+	}
 	return (*head);
 }
