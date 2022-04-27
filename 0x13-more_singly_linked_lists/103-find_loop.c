@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * reverse_listint - function that reverses a listint_t linked list.
- * @head: pointer to pointer to the head of linked list.
+ * find_listint_loop - function that reverses a listint_t linked list.
+ * @head: pointer to the head of linked list.
  *
- * You are not allowed to use more than 1 loop.
  * You are not allowed to use malloc, free or arrays.
  * You can only declare a maximum of two variables in your function.
  *
- * Return:  the pointer to first node.
+ * Return: The address of the node where the loop starts, or NULL if,
+ * there is no loop.
  */
 
 listint_t *find_listint_loop(listint_t *head)
