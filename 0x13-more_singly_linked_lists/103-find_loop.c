@@ -15,28 +15,38 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slow = head, *fast = head;
-
+	/* Use of Floyd’s Cycle-Finding Algorithm */
+	/* let slow_ptr and fast_ptr be two node pointers pointing to the head node */
+	listint_t *slow_ptr = head, *fast_ptr = head;
+	/* if list is empty or has only one node without a loop return NULL */
 	if (head == NULL || head->next == NULL)
 		return (NULL);
-	slow = slow->next;
-	fast = fast->next->next;
-
-	while (fast && fast->next)
+	/* in every iteration slow_ptr ptr moves ahead by one node */
+	slow_ptr = slow_ptr->next;
+	/* in every iteration fast_ptr ptr moves ahead by two nodes */
+	fast_ptr = fast_ptr->next->next;
+	/* search for a loop using slow_ptr and fast_ptr pointers */
+	while (fast_ptr && fast_ptr->next)
 	{
-		if (slow == fast)
+		/**
+		 * slow_ptr and fast_ptr eventually meet at the same node, thus,
+		 * indicating that the linked list contains a loop.
+		 */
+		if (slow_ptr == fast_ptr)
 			break;
-		slow = slow->next;
-		fast = fast->next->next;
+		slow_ptr = slow_ptr->next;
+		fast_ptr = fast_ptr->next->next;
 	}
-	if (slow != fast)
+	/* if loop does not exists return NULL*/
+	if (slow_ptr != fast_ptr)
 		return (NULL);
-
-	slow = head;
-	while (slow != fast)
+	/* if loop exists, start slow_ptr from head and fast_ptr from meet point */
+	slow_ptr = head;
+	while (slow_ptr != fast_ptr)
 	{
-		slow = slow->next;
-		fast = fast->next;
+		slow_ptr = slow_ptr->next;
+		fast_ptr = fast_ptr->next;
 	}
-	return (slow);
+	/* return slow_ptr */
+	return (slow_ptr);
 }
