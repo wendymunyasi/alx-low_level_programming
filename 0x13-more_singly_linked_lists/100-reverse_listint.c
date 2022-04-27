@@ -16,9 +16,9 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *current = *head;
 
-	if (head == NULL)
+	if (head == NULL || *head)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	/* check if the next field of current is null */
