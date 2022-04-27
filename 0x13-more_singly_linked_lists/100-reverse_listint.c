@@ -9,7 +9,7 @@
  * You are not allowed to use malloc, free or arrays.
  * You can only declare a maximum of two variables in your function.
  *
- * Return:  the linked list in reverse.
+ * Return:  the pointer to first node.
  */
 
 listint_t *reverse_listint(listint_t **head)
@@ -31,6 +31,6 @@ listint_t *reverse_listint(listint_t **head)
 		current->next->next = current;
 		current->next = NULL;
 	}
-	return (*head);
+	return (NULL);
 }
 
