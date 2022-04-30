@@ -16,6 +16,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		return (-1);
 	}
+	/* use bitwise OR | operator to set a bit */
 	/* use number |= 1UL << n to set a bit */
 	*n |= (1UL << index);
 
