@@ -15,12 +15,16 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int count = 0;
 	/* take XOR of n and m and store in XOR_nm */
-	unsigned int XOR_nm;
+	unsigned int XOR_nm = n ^ m;
 
 	/* Using Brian Kernighan’s algorithm to count set bits */
 	/* count stores the total bits set in XOR_nm */
-	for (XOR_nm = n ^ m; XOR_nm != 0; XOR_nm = XOR_nm >> 1)
-		count += XOR_nm & 1;
+	while (XOR_nm)
+	{
+		/* clear the least significant bit */
+		XOR_nm = XOR_nm & (XOR_nm - 1);
+		count++;
+	}
 	/* return count */
 	return (count);
 }
