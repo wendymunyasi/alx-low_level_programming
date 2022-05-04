@@ -1,7 +1,6 @@
-#include "main.h"
-#include <stdio.h>
-
 /* CHECK NOTES AT END OF MAIN FUNCTION AT THE BOTTOM */
+
+#include "main.h"
 
 /**
  * create_buffer - function that allocates 1024 bytes for a buffer.
