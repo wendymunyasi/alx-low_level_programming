@@ -21,10 +21,7 @@ Tel:*+254707240068.*
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`.
 
 ### Project Description.
-*   Learn about pointers, arrays and strings.
-*   What are the differences between pointers and arrays.
-*   How to use strings and how to manipulate them.
-*   Scope of variables.
+Learn about pointers, arrays and strings. What are the differences between pointers and arrays. How to use strings and how to manipulate them. Scope of variables.
 
 * **0. 98 Battery st.** - Write a function that takes a pointer to an `int` as parameter and updates the value it points to to `98`. - `0-reset_to_98.c`.
 * **1. Don't swap horses in crossing a stream** - Write a function that swaps the values of two integers.- `1-swap.c`.

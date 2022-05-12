@@ -24,9 +24,7 @@ Tel: *+254707240068.*
 
 
 ### Project Description
-*   Learn about what are variadic functions.
-*   How to use `va_start`, `va_arg` and `va_end` macros.
-*   Why and how to use the `const` type qualifier.
+Learn about what are variadic functions. How to use `va_start`, `va_arg` and `va_end` macros. Why and how to use the `const` type qualifier.
 
 * **0. What's my name** - Write a function that prints a name. - `0-print_name.c`.
 * **1. If you spend too much time thinking about a thing, you'll never get it done** - Write a function that executes a function given as a parameter on each element of an array. - `1-array_iterator.c`.
