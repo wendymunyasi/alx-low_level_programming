@@ -23,7 +23,7 @@ Tel: *+254707240068.*
 
 
 ### Project Description
-Learn about macros and how to include header files.
+Learn about macros and how to use them. What are the most common predefined macros and how to include guard your header files.
 
 * **0. Object-like Macro** - Create a header file that defines a macro named `SIZE` as an abbreviation for the token `1024`. - `0-object_like_macro.h`.
 * **1. Pi** - Create a header file that defines a macro named `PI` as an abbreviation for the token `3.14159265359`. - `1-pi.h`.

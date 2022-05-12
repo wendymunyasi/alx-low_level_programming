@@ -22,7 +22,7 @@ Tel: *+254707240068.*
 
 
 ### Project Description
-Learn more about memory allocation.
+Learn about how to use the `exit` function, what are the functions `calloc` and `realloc` from the standard library and how to use them.
 
 * **0. Trust no one** - Write a function that allocates memory using `malloc`. - `0-malloc_checked.c`.
 * **1. string_nconcat** - Write a function that concatenates two strings. - `1-string_nconcat.c`.
