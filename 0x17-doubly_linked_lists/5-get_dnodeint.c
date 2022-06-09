@@ -16,15 +16,20 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	i = 0;
 
+	/* check if head is NULL */
 	if (!head)
 		return (NULL);
 
+	/* while head is not NULL */
 	while (head != NULL)
 	{
+		/* initialize search here */
 		if (i == index)
 			break;
 		i++;
+		/* make head point to next if index is not found */
 		head = head->next;
 	}
+	/* return the node */
 	return (head);
 }
