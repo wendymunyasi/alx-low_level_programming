@@ -29,7 +29,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	/* check if idx = 0 */
 	if (idx == 0)
 	{
-		new_node = add_dnodeint(h, n);
+		/* access the next field of new_node and assign it as first node */
+		new_node->next = *h;
+		*h = new_node;
+		return (new_node);
 	}
 	/* make traverse be the value at head */
 	traverse = *h;
