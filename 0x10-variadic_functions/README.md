@@ -26,10 +26,10 @@ Tel: *+254707240068.*
 ### Project Description
 Learn about what are variadic functions. How to use `va_start`, `va_arg` and `va_end` macros. Why and how to use the `const` type qualifier.
 
-* **0. What's my name** - Write a function that prints a name. - `0-print_name.c`.
-* **1. If you spend too much time thinking about a thing, you'll never get it done** - Write a function that executes a function given as a parameter on each element of an array. - `1-array_iterator.c`.
-* **2. To hell with circumstances; I create opportunities** - Write a function that searches for an integer. - `2-int_index.c`.
-* **3. A goal is not always meant to be reached, it often serves simply as something to aim at** - Write a program that performs simple operations. - `3-main.c`, `3-op_functions.c`, `3-get_op_func.c`, `3-calc.h`.
+* **0. Beauty is variable, ugliness is constant** - Write a function that returns the sum of all its parameters. - `0-sum_them_all.c`.
+* **1. To be is to be the value of a variable** - Write a function that prints numbers, followed by a new line. - `1-print_numbers.c`.
+* **2. One woman's constant is another woman's variable** - Write a function that prints strings, followed by a new line. - `2-print_strings.c`.
+* **3. To be is a to be the value of a variable** - Write a function that prints anything. - `3-print_all.c`.
 
 ### Collaborate
 
