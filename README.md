@@ -40,6 +40,8 @@ All of the following folders are projects done during the studies:
 | [`0x12. C - Singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x12-singly_linked_lists) | It aims to learn about singly linked lists in **C language**.|
 | [`0x13. C - More singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | It aims to learn more about singly linked lists in **C language**.|
 | [`0x14. C - Bit manipulation`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x14-bit_manipulation) | It aims to learn about bit manipulation in **C language**.|
+| [`0x15. C - File I/O`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x15-file_io) | It aims to learn about opening, closing, reading and writing files in **C language**.|
+| [`0x17. C - Doubly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x15-file_io) | It aims to learn about doubly linked lists in **C language**.|
 
 ### Collaborate
 
