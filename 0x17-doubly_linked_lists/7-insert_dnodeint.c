@@ -16,32 +16,38 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new_node, *traverse;
-	unsigned int i = 0;
-	/* if there is no list return null */
+	unsigned int i;
+
+	new_node = NULL;
 	if (h == NULL)
 		return (NULL);
-	/* create the new node */
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
+	new_node->next = NULL;
 	/* access the n field of the new_node and initialize it as n */
 	new_node->n = n;
-	/* check if idx = 0 */
+	traverse = *h;
+	if (!traverse)
+	{	/* create initial node */
+		*h = new_node;
+	}
+	/* insert at the beginning */
 	if (idx == 0)
 	{
-		/* access the next field of new_node and assign it as first node */
-		new_node->next = *h;
-		*h = new_node;
-		return (new_node);
+		new_node = add_dnodeint(h, n);
 	}
-	/* make traverse be the value at head */
-	traverse = *h;
+	/* insert node at the end */
+	if (traverse->next == NULL)
+	{
+		new_node = add_dnodeint_end(h, n);
+	}
+	traverse = *h; /* make traverse be the value at head */
 	while (i != idx - 1 && traverse != NULL)
 	{
 		traverse = traverse->next;
 		i++;
 	}
-
 	if (i == idx - 1 && traverse != NULL)
 	{
 		new_node->next = traverse->next;
