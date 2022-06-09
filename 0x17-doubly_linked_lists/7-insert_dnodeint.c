@@ -33,7 +33,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new_node;
 	}
 	/* insert at the beginning */
-	if (idx == 0)
+	if (idx == 1)
 	{
 		new_node = add_dnodeint(h, n);
 	}
