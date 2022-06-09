@@ -9,7 +9,7 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t count = 0;
+	int count = 0;
 
 	/* while we have a pointer to the list */
 	while (h != NULL)
