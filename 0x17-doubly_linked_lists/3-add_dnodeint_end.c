@@ -22,6 +22,14 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	/* assign data to new node */
 	new_node->n = n;
 
+	/**
+	 * the new node is going to be the last node so make next,
+	 * of it as NULL
+	 */
+	new_node->next = NULL;
+
+	last = *head;
+
 	/* if there is no head/list make new node as head node */
 	if (*head == NULL)
 	{
@@ -30,12 +38,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else
 	{
-		/**
-		 * the new node is going to be the last node so make next,
-		 * of it as NULL
-		 */
-		new_node->next = NULL;
-		last = *head;
 		/* traverse till last node */
 		while (last->next)
 			last = last->next;
