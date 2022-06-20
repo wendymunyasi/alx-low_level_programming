@@ -1,99 +1,150 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - Program that multiplies two positive numbers.
+ * @argc: number of arguments.
+ * @argv: pointer to array of arguments.
  *
- * Return: always 0 (Success)
+ * Return: 0 (Always 0)
  */
 int main(int argc, char *argv[])
 {
-	char *s1, *s2;
-	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
+	int length1, length2, length, ti, i;
+	char *a;
+	char *t;
+	char error[] = "Error\n";
 
-	s1 = argv[1], s2 = argv[2];
-	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		errors();
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-	len = len1 + len2 + 1;
-	result = malloc(sizeof(int) * len);
-	if (!result)
-		return (1);
-	for (i = 0; i <= len1 + len2; i++)
-		result[i] = 0;
-	for (len1 = len1 - 1; len1 >= 0; len1--)
+	if (argc != 3 || sonnum(argv))
 	{
-		digit1 = s1[len1] - '0';
-		carry = 0;
-		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+		for (ti = 0; error[ti]; ti++)
+			_putchar(error[ti]);
+		exit(98);
+	}
+	for (length1 = 0; argv[1][length1]; length1++)
+		;
+	for (length2 = 0; argv[2][length2]; length2++)
+		;
+	length = length1 + length2 + 1;
+	a = malloc(length * sizeof(char));
+	if (a == NULL)
+	{
+		for (ti = 0; error[ti]; ti++)
+			_putchar(error[ti]);
+		exit(98);
+	}
+	init(a, length - 1);
+	for (ti = length2 - 1, i = 0; ti >= 0; ti--, i++)
+	{
+		t = mul(argv[2][ti], argv[1], length1 - 1, a, (length - 2) - i);
+		if (t == NULL)
 		{
-			digit2 = s2[len2] - '0';
-			carry += result[len1 + len2 + 1] + (digit1 * digit2);
-			result[len1 + len2 + 1] = carry % 10;
-			carry /= 10;
+			for (ti = 0; error[ti]; ti++)
+				_putchar(error[ti]);
+			free(a);
+			exit(98);
 		}
-		if (carry > 0)
-			result[len1 + len2 + 1] += carry;
 	}
-	for (i = 0; i < len - 1; i++)
-	{
-		if (result[i])
-			a = 1;
-		if (a)
-			_putchar(result[i] + '0');
-	}
-	if (!a)
-		_putchar('0');
-	_putchar('\n');
-	free(result);
+	_print(a, length - 1);
 	return (0);
 }
 
 /**
- * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
+ * _print - function that prints a string.
+ * @str: pointer to null-terminated byte string to be examined.
+ * @l: int variable.
  *
- * Return: 0 if a non-digit is found, 1 otherwise
+ * Return: No return.
  */
-int is_digit(char *s)
-{
-	int i = 0;
 
-	while (s[i])
+void _print(char *str, int l)
+{
+	int i, j;
+
+	i = j = 0;
+	while (i < l)
 	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
+		if (str[i] != '0')
+			j = 1;
+		if (j || i == l - 1)
+			_putchar(str[i]);
 		i++;
 	}
-	return (1);
+
+	_putchar('\n');
+	free(str);
 }
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
+ * mul - fucntion pointer.
+ * @n: char variable.
+ * @num: pointer to char variable.
+ * @num_index: int variable.
+ * @dest: pointer to null-terminated byte string to be examined.
+ * @dest_index: int variable.
  *
- * Return: the length of the string
+ * Return: dest.
  */
-int _strlen(char *s)
+char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
-	int i = 0;
+	int j, k, mul, mul_rem, add, add_rem;
 
-	while (s[i] != '\0')
+	mul_rem = add_rem = 0;
+	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
-		i++;
+		mul = (n - '0') * (num[j] - '0') + mul_rem;
+		mul_rem = mul / 10;
+		add = (dest[k] - '0') + (mul % 10) + add_rem;
+		add_rem = add / 10;
+		dest[k] = add % 10 + '0';
 	}
-	return (i);
+	for (add_rem += mul_rem; k >= 0 && add_rem; k--)
+	{
+		add = (dest[k] - '0') + add_rem;
+		add_rem = add / 10;
+		dest[k] = add % 10 + '0';
+	}
+	if (add_rem)
+	{
+		return (NULL);
+	}
+	return (dest);
 }
 
 /**
- * errors - handles errors for main
+ * sonnum - function that 
+ * @av: double pointer to array of arguments
+ *
+ * Return: 0 if digits, 1 if not.
  */
-void errors(void)
+
+int sonnum(char **av)
 {
-	printf("Error\n");
-	exit(98);
+	int i, j;
+
+	for (i = 1; i < 3; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+		{
+			if (av[i][j] < '0' || av[i][j] > '9')
+				return (1);
+		}
+	}
+	return (0);
+}
+
+/**
+ * init - function that inits
+ * @str: pointer to null-terminated byte string to be examined.
+ * @l: integer variable
+ *
+ * Return: No return
+ */
+void init(char *str, int l)
+{
+	int i;
+
+	for (i = 0; i < l; i++)
+		str[i] = '0';
+	str[i] = '\0';
 }
