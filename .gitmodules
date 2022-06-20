@@ -7,3 +7,6 @@
 [submodule "0x16-simple_shell"]
 	path = 0x16-simple_shell
 	url = https://github.com/Kennie-Simz/simple_shell.git
+[submodule "0x19-monty-stacks_queues_LIFO_FIFO"]
+	path = 0x19-monty-stacks_queues_LIFO_FIFO
+	url = https://github.com/wendymunyasi/monty.git
