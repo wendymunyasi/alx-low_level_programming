@@ -1,123 +1,104 @@
 #include "main.h"
 
 /**
- * _is_zero - determines if any number is zero
- * @argv: argument vector.
- *
- * Return: no return.
- */
-void _is_zero(char *argv[])
-{
-	int i, isn1 = 1, isn2 = 1;
-
-	for (i = 0; argv[1][i]; i++)
-		if (argv[1][i] != '0')
-		{
-			isn1 = 0;
-			break;
-		}
-
-	for (i = 0; argv[2][i]; i++)
-		if (argv[2][i] != '0')
-		{
-			isn2 = 0;
-			break;
-		}
-
-	if (isn1 == 1 || isn2 == 1)
-	{
-		printf("0\n");
-		exit(0);
-	}
-}
-
-/**
- * _initialize_array - set memery to zero in a new array
- * @ar: char array.
- * @lar: length of the char array.
- *
- * Return: pointer of a char array.
- */
-char *_initialize_array(char *ar, int lar)
-{
-	int i = 0;
-
-	for (i = 0; i < lar; i++)
-		ar[i] = '0';
-	ar[lar] = '\0';
-	return (ar);
-}
-
-/**
- * _checknum - determines length of the number
- * and checks if number is in base 10.
- * @argv: arguments vector.
- * @n: row of the array.
- *
- * Return: length of the number.
- */
-int _checknum(char *argv[], int n)
-{
-	int ln;
-
-	for (ln = 0; argv[n][ln]; ln++)
-		if (!isdigit(argv[n][ln]))
-		{
-			printf("Error\n");
-			exit(98);
-		}
-
-	return (ln);
-}
-
-/**
- * main - Entry point.
- * program that multiplies two positive numbers.
+ * main - function that multiplies two positive numbers.
  * @argc: number of arguments.
- * @argv: arguments vector.
+ * @argv: pointer to array of arguments.
  *
- * Return: 0 - success.
+ * Print the result, followed by a new line.
+ * If the number of arguments is incorrect, print Error, followed by a,
+ * new line, and exit with a status of 98.
+ * num1 and num2 should only be composed of digits. If not, print Error,
+ * followed by a new line, and exit with a status of 98.
+ * You are allowed to use more than 5 functions in your file.
+ *
+ * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int ln1, ln2, lnout, add, addl, i, j, k, ca;
-	char *nout;
+	char *str1, *str2;
+	int length1, length2, length, i, carry, digit1, digit2, *result, a = 0;
 
-	if (argc != 3)
-		printf("Error\n"), exit(98);
-	ln1 = _checknum(argv, 1), ln2 = _checknum(argv, 2);
-	_is_zero(argv), lnout = ln1 + ln2, nout = malloc(lnout + 1);
-	if (nout == NULL)
-		printf("Error\n"), exit(98);
-	nout = _initialize_array(nout, lnout);
-	k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
-	for (; k >= 0; k--, i--)
+	str1 = argv[1], str2 = argv[2];
+	if (argc != 3 || !is_digit(str1) || !is_digit(str2))
+		errors();
+	length1 = _strlen(str1);
+	length2 = _strlen(str2);
+	length = length1 + length2 + 1;
+	result = malloc(sizeof(int) * length);
+	if (!result)
+		return (1);
+	for (i = 0; i <= length1 + length2; i++)
+		result[i] = 0;
+	for (length1 = length1 - 1; length1 >= 0; length1--)
 	{
-		if (i < 0)
+		digit1 = str1[length1] - '0';
+		carry = 0;
+		for (length2 = _strlen(str2) - 1; length2 >= 0; length2--)
 		{
-			if (addl > 0)
-			{
-				add = (nout[k] - '0') + addl;
-				if (add > 9)
-					nout[k - 1] = (add / 10) + '0';
-				nout[k] = (add % 10) + '0';
-			}
-			i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
+			digit2 = str2[length2] - '0';
+			carry += result[length1 + length2 + 1] + (digit1 * digit2);
+			result[length1 + length2 + 1] = carry % 10;
+			carry /= 10;
 		}
-		if (j < 0)
-		{
-			if (nout[0] != '0')
-				break;
-			lnout--;
-			free(nout), nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
-			k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
-		}
-		if (j >= 0)
-		{
-			add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
-			addl = add / 10, nout[k] = (add % 10) + '0';
-		}
+		if (carry > 0)
+			result[length1 + length2 + 1] += carry;
 	}
-	printf("%s\n", nout);
+	for (i = 0; i < length - 1; i++)
+	{
+		if (result[i])
+			a = 1;
+		if (a)
+			_putchar(result[i] + '0');
+	}
+	if (!a)
+		_putchar('0');
+	_putchar('\n');
+	free(result);
 	return (0);
+}
+
+/**
+ * is_digit - function that checks if a string contains a non-digit char.
+ * @str: pointer to null-terminated byte string to be examined.
+ *
+ * Return: 0 if a non-digit is found, 1 otherwise.
+ */
+int is_digit(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+	{
+		if (str[i] < '0' || str[i] > '9')
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+/**
+ * _strlen - function that returns the length of a string.
+ * @str: pointer to null-terminated byte string to be examined.
+ *
+ * Return: The length of the string.
+ */
+int _strlen(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
+ * errors - function that handles errors for main.
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
 }
