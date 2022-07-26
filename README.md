@@ -46,6 +46,8 @@ All of the following folders are projects done during the studies:
 | [`0x18. C - Dynamic libraries`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x18-dynamic_libraries) | It aims to learn about dynamic libraries in **C language**.|
 | [`0x19. C - Stacks, Queues - LIFO, FIFO`](https://github.com/wendymunyasi/monty) | It aims to learn about LIFO, FIFO, stacks and queues in including the **Monty** language and how to use **global variables** in **C language**.|
 | [`0x1A. C - Hash tables`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x1A-hash_tables) | It aims to learn about hash tables (dictionaries in Python language) and their advantages and disadvatages in **C language**.|
+| [`0x1B. C - Sorting algorithms & Big O`](https://github.com/martinmulwa/sorting_algorithms) | It aims to learn about various sorting algorithms in **C language**.|
+
 
 ### Collaborate
 
