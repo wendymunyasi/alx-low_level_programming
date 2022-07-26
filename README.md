@@ -41,6 +41,7 @@ All of the following folders are projects done during the studies:
 | [`0x13. C - More singly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | It aims to learn more about singly linked lists in **C language**.|
 | [`0x14. C - Bit manipulation`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x14-bit_manipulation) | It aims to learn about bit manipulation in **C language**.|
 | [`0x15. C - File I/O`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x15-file_io) | It aims to learn about opening, closing, reading and writing files in **C language**.|
+| [`0x16. C - Simple Shell`](https://github.com/Kennie-Simz/simple_shell/tree/394c4fb9620ce8e97e52035e0d6cf96fc36c971b) | It aims to learn about making our own simple shell in **C language**.|
 | [`0x17. C - Doubly linked lists`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x15-file_io) | It aims to learn about doubly linked lists in **C language**.|
 | [`0x18. C - Dynamic libraries`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x18-dynamic_libraries) | It aims to learn about dynamic libraries in **C language**.|
 | [`0x19. C - Stacks, Queues - LIFO, FIFO`](https://github.com/wendymunyasi/monty) | It aims to learn about LIFO, FIFO, stacks and queues in including the **Monty** language and how to use **global variables** in **C language**.|
