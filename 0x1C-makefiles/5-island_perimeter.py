@@ -6,7 +6,7 @@ def island_perimeter(grid):
     """returns the perimeter of the island described in grid.
 
     Args:
-        grid (_type_): grid
+        grid (list): grid
     """
     m, n = len(grid), len(grid[0])
     land, neighbour = 0, 0
