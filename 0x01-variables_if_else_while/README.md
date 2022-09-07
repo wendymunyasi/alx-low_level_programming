@@ -17,7 +17,7 @@ Tel:*+254707240068.*
 *   There should be no errors and no warnings during compilation.
 *   You are not allowed to use `system`.
 
-### Project Description.
+## Project Description.
 Learning C variables, if, else and while statements.
 
 * **0. Positive anything is better than negative nothing** - This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative. - `0-positive_or_negative.c`.
@@ -34,6 +34,6 @@ Learning C variables, if, else and while statements.
 * **11. The success combination in business is: Do what you do better... and: do more of what you do...** - Write a program that prints all possible different combinations of three digits. - `101-print_comb3.c`.
 * **12. Software is eating the World** - Write a program that prints all possible combinations of two two-digit numbers. - `102-print_comb3.c`.
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.
