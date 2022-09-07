@@ -26,7 +26,7 @@ Tel:*+254707240068.*
 *   The first line of all your files should be exactly `#!/bin/bash`.
 
 
-### Project Description.
+## Project Description.
 Learning who invented C and how to print hello world.
 
 * **0. Preprocessor** - Write a script that runs a C file through the preprocessor and save the result into another file. - `0-preprocessor`.
