@@ -39,7 +39,8 @@ typedef struct listint_s
 } listint_t;
 ```
 
-### Project Description
+
+## Project Description
 Learn more about linked lists and how they compare with arrays.
 
 * **0. Print list** - Write a function that prints all the elements of a `listint_t` list. - `0-print_listint.c`.
@@ -58,6 +59,7 @@ Learn more about linked lists and how they compare with arrays.
 * **13. Free (safe version)** - Write a function that frees a listint_t list. - `102-free_listint_safe.c`.
 * **14. Find the loop** - Write a function that finds the loop in a linked list. - `103-find_loop.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

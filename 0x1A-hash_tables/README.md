@@ -38,6 +38,7 @@ What are the most common use cases of hash tables.
 * **6. >>> del ht** - Write a function that deletes a hash table. - `6-hash_table_delete.c`.
 * **7. $ht['Betty'] = 'Cool'** - Rewrite the previous functions using the given data structures - `100-sorted_hash_table.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

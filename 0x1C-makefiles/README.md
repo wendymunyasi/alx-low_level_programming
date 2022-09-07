@@ -252,6 +252,7 @@ Use these [files](https://github.com/holbertonschool/0x1B.c) for the tasks.
     * Your Makefile should not compile if the header file `m.h` is missing.
 ---
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

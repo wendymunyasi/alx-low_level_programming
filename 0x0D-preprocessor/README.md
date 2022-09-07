@@ -22,7 +22,7 @@ Tel: *+254707240068.*
 *   All your header files should be include guarded.
 
 
-### Project Description
+## Project Description
 Learn about macros and how to use them. What are the most common predefined macros and how to include guard your header files.
 
 * **0. Object-like Macro** - Create a header file that defines a macro named `SIZE` as an abbreviation for the token `1024`. - `0-object_like_macro.h`.
@@ -31,6 +31,7 @@ Learn about macros and how to use them. What are the most common predefined macr
 * **3. Function-like macro** - Write a function-like macro `ABS(x)` that computes the absolute value of a number `x`. - `3-function_like_macro.h`.
 * **4. SUM** - Write a function-like macro `SUM(x, y)` that computes the sum of the numbers `x` and `y`. - `4-sum.h`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

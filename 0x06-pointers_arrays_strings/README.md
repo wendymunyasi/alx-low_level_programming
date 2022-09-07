@@ -19,7 +19,7 @@ Tel: *+254707240068.*
 *   The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called `main.h`.
 
 
-### Project Description
+## Project Description
 Learn more about pointers, arrays and strings.
 
 * **0. strcat.** - Write a function that concatenates two strings. `0-strcat.c`.
@@ -36,6 +36,7 @@ Learn more about pointers, arrays and strings.
 * **11. It is the addition of strangeness to beauty that constitutes the romantic character in art** - Write a function that copies a string. ` 103-infinite_add.c`.
 * **12. Noise is a buffer, more effective than cubicles or booth walls** - Write a function that compares two strings. `104-print_buffer.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

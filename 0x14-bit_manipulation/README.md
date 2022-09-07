@@ -22,7 +22,7 @@ Tel: *+254707240068.*
 *   All your header files should be include guarded.
 
 
-### Project Description
+## Project Description
 Learn about bit and bit manipulation. Also involves the use of pointers.
 
 * **0. 0** - Write a function that converts a binary number to `an unsigned int`. - `0-binary_to_uint.c`.
@@ -34,6 +34,7 @@ Learn about bit and bit manipulation. Also involves the use of pointers.
 * **6. Endianness** - Write a function that checks the endianness. - `100-get_endianness.c`.
 * **7. Crackme3** - Find the password for this [program](https://github.com/holbertonschool/0x13.c). - `101-password`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

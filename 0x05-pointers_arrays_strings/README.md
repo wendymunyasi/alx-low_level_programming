@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   The `main.c` files are used to test your functions, but you don’t have to push them to your repo.
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`.
 
-### Project Description.
+## Project Description.
 Learn about pointers, arrays and strings. What are the differences between pointers and arrays. How to use strings and how to manipulate them. Scope of variables.
 
 * **0. 98 Battery st.** - Write a function that takes a pointer to an `int` as parameter and updates the value it points to to `98`. - `0-reset_to_98.c`.
@@ -37,6 +37,6 @@ Learn about pointers, arrays and strings. What are the differences between point
 * **11. Don't hate the hacker, hate the code** - Create a program that generates random valid passwords for the program 101-crackme.- `101-keygen.c`.
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

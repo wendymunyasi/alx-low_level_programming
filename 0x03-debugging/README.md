@@ -15,7 +15,7 @@ Tel:*+254707240068.*
 *   Your code should use the `Betty` style. It will be checked using `betty-style.pl` and `betty-doc.pl` .
 *   All your files should end with a new line.
 
-### Project Description.
+## Project Description.
 Practicing how to debug in C.
 
 * **0. Multiple mains** - Based on the main.c file shown, create a file named `0-main.c`. This file must test that the function `positive_or_negative()` gives the correct output when given a case of `0`. - `0-main.c, main.h`.
@@ -23,6 +23,6 @@ Practicing how to debug in C.
 * **2. 0 > 972?** - Fix the code in `2-largest_number.c` so that it correctly prints out the largest of three numbers, no matter the case. - `2-largest_number.c, main.h`.
 * **3. Leap year** - Fix the `print_remaining_days()` function so that the output works correctly for **all** dates and **all** leap years. - `3-print_remaining_days.c, main.h`.
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

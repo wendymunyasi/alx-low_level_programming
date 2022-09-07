@@ -20,12 +20,13 @@ Tel: *+254707240068.*
 *   The `main.c` files are used to test your functions, but you don’t have to push them to your repo.
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h` .
 
-### Project Description
+## Project Description
 Learn about static libraries, how they work, how to create one and use it.
 
 * **0. A library is not a luxury but one of the necessities of life** - Create the static library `libmy.a` containing all the functions listed in this task 0. - `libmy.a, main.h`.
 * **1. Without libraries what have we? We have no past and no future** - Create a script called `create_static_lib.sh` that creates a static library called `liball.a` from all the `.c` files that are in the current directory. - `create_static_lib.sh`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

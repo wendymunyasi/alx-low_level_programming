@@ -21,7 +21,7 @@ Tel: *+254707240068.*
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h` .
 
 
-### Project Description
+## Project Description
 Learn about how to use the `exit` function, what are the functions `calloc` and `realloc` from the standard library and how to use them.
 
 * **0. Trust no one** - Write a function that allocates memory using `malloc`. - `0-malloc_checked.c`.
@@ -31,6 +31,7 @@ Learn about how to use the `exit` function, what are the functions `calloc` and 
 * **4. _realloc** - Write a function that reallocates a memory block using `malloc` and `free` - `100-realloc.c`.
 * **5. We must accept finite disappointment, but never lose infinite hope** - Write a program that multiplies two positive numbers. - `101-mul.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

@@ -22,7 +22,7 @@ Tel:*+254707240068.*
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`.
 
 
-### Project Description.
+## Project Description.
 Learning about nested loops, functions and how to use them. Learn about prototypes and header files and how to use them with `#include`.
 
 * **0. _putchar** - Write a program that prints `_putchar`, followed by a new line. - `0-putchar.c`.
@@ -43,6 +43,7 @@ Learning about nested loops, functions and how to use them. Learn about prototyp
 * **15. Even Liber Abbaci** - By considering the terms in the Fibonacci sequence whose values do not exceed 4,000,000, write a program that finds and prints the sum of the even-valued terms, followed by a new line. - `103-fibonacci.c`.
 * **16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+** - Write a program that finds and prints the first 98 Fibonacci numbers, starting with `1` and `2`, followed by a new line. - `104-fibonacci.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

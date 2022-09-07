@@ -20,7 +20,7 @@ Tel: *+254707240068.*
 *   The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called `main.h`.
 
 
-### Project Description
+## Project Description
 Pointers, arrays and strings.
 
 * **0. memset** - Write a function that fills memory with a constant byte. - `0-memset.c`.
@@ -34,6 +34,7 @@ Pointers, arrays and strings.
 * **8. Double pointer, double fun** - Write a function that sets the value of a pointer to a char. - `100-set_string.c`.
 * **9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure** - Create a file that contains the password for the `crackme2` executable. - `101-crackme_password`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

@@ -22,7 +22,7 @@ Tel: *+254707240068.*
 *   All your header files should be include guarded.
 
 
-### Project Description
+## Project Description
 Learn about function pointers and how to use them, what exactly they hold and point to in the virtual memory.
 
 * **0. What's my name** - Write a function that prints a name. - `0-print_name.c`.
@@ -30,6 +30,6 @@ Learn about function pointers and how to use them, what exactly they hold and po
 * **2. To hell with circumstances; I create opportunities** - Write a function that searches for an integer. - `2-int_index.c`.
 * **3. A goal is not always meant to be reached, it often serves simply as something to aim at** - Write a program that performs simple operations. - `3-main.c`, `3-op_functions.c`, `3-get_op_func.c`, `3-calc.h`.
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

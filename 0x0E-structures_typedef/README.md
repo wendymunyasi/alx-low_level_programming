@@ -20,7 +20,7 @@ Tel: *+254707240068.*
 *   All your header files should be include guarded.
 
 
-### Project Description
+## Project Description
 Learn about structures and `typedef`.
 
 * **0. Poppy** - Define a new type `struct dog` with the given elements. - `dog.h`.
@@ -30,6 +30,7 @@ Learn about structures and `typedef`.
 * **4. A door is what a dog is perpetually on the wrong side of** - Write a function that creates a new dog. - `4-new_dog.c`.
 * **5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg** - Write a function that frees dogs. - `5-free_dog.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

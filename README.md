@@ -51,6 +51,6 @@ All of the following folders are projects done during the studies:
 | [`0x1D. C - Binary trees`](https://github.com/wendymunyasi/binary_trees) | It aims to learn about binary trees and binary search trees (BSTs) in **C language**.|
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

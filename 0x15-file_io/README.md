@@ -24,7 +24,7 @@ Tel: *+254707240068.*
 *   Tip: always prefer using symbolic constants (`POSIX`) vs numbers when it makes sense. For instance `read(STDIN_FILENO, ...` vs `read(0, ...`.
 
 
-### Project Description
+## Project Description
 Learn about how to create, open, close, read and write files.
 What are file descriptors.
 What are the 3 standard file descriptors, what are their purpose and what are their `POSIX` names.
@@ -43,6 +43,7 @@ What is the difference between a function and a system call.
 * **5. The Hare and the Tortoise** - Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed. - `100-first.c`.
 * **6. Real programmers can write assembly code in any language** - Write a 64-bit program in assembly that prints `Hello, Holberton`, followed by a new line. - `101-hello_holberton.asm`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

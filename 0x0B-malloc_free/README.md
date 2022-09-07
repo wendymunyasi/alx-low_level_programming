@@ -21,7 +21,7 @@ Tel: *+254707240068.*
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h` .
 
 
-### Project Description
+## Project Description
 Learn about what is the difference between automatic and dynamic allocation. What is `malloc` and `free` and how to use them. Why and when use `malloc`. How to use `valgrind` to check for memory leak.
 
 * **0. Float like a butterfly, sting like a bee** - Write a function that creates an array of chars, and initializes it with a specific char. - `0-create_array.c`.
@@ -32,6 +32,7 @@ Learn about what is the difference between automatic and dynamic allocation. Wha
 * **5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe** - Write a function that concatenates all the arguments of your program. - `100-argstostr.c`.
 * **6. I will show you how great I am** - Write a function that splits a string into words. - `101-strtow.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

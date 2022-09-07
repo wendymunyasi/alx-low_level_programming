@@ -40,5 +40,4 @@ Learning who invented C and how to print hello world.
 * **8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity** - Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error. - `101-quote.c`.
 
 ## Collaborate
-
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

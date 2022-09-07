@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   The `main.c` files are used to test your functions, but you don’t have to push them to your repo.
 *   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`.
 
-### Project Description.
+## Project Description.
 Practising more on funtions and nested loops.
 
 * **0. isupper** - Write a function that checks for uppercase character. - `0-isupper.c`.
@@ -37,6 +37,7 @@ Practising more on funtions and nested loops.
 * **11. The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic** - Write a program that finds and prints the largest prime factor of the number `612852475143`, followed by a new line. - `100-prime_factor.c`.
 * **12. Numbers have life; they're not just symbols on paper** - Write a function that prints an integer. - `101-print_number.c`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.

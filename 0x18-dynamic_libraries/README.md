@@ -33,6 +33,7 @@ Basic usage `nm`, `ldd`, `ldconfig`.
 * **2. Let's call C functions from Python** - Create a dynamic library that contains C functions that can be called from Python. See example for more detail. - `100-operations.so`.
 * **3. Code injection: Win the Giga Millions!** - I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot? - `101-make_me_win.sh`.
 
-### Collaborate
+
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com.
