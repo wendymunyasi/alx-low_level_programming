@@ -49,6 +49,7 @@ All of the following folders are projects done during the studies:
 | [`0x1B. C - Sorting algorithms & Big O`](https://github.com/martinmulwa/sorting_algorithms) | It aims to learn about various sorting algorithms in **C language**.|
 | [`0x1C. C - Makefiles`](https://github.com/wendymunyasi/alx-low_level_programming/tree/master/0x1C-makefiles) | It aims to learn what are `make`, Makefiles. When, why and how to use Makefiles.|
 | [`0x1D. C - Binary trees`](https://github.com/wendymunyasi/binary_trees) | It aims to learn about binary trees and binary search trees (BSTs) in **C language**.|
+| [`0x1E. C - Search Algorithms`](https://github.com/martinmulwa/sorting_algorithms) | It aims to learn about linear and binary search algorithms in **C language**.|
 
 
 ## Collaborate
