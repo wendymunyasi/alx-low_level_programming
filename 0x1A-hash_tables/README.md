@@ -1,5 +1,5 @@
 # Project Name
-**0x18. C - Dynamic libraries**
+**0x1A. C - Hash tables**
 
 ## Author's Details
 Name: *Wendy Munyasi.*

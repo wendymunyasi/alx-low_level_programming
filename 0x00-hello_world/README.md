@@ -1,5 +1,5 @@
 # Project Name.
-**00x00. C - Hello, World**
+**0x00. C - Hello, World**
 
 ## Author's Details.
 Name: *Wendy Munyasi.*
