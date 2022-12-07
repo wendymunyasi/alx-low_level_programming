@@ -1,31 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * compare - function that compares two strings.
- * @haystack: pointer to the first null-terminated byte string.
- * @needle: pointer to the second null-terminated byte string.
- *
- * Return: true if haystack and needle are the same.
- */
-
-int compare(char *haystack, char *needle)
-{
-	/* loop through both strings */
-	while (*haystack && *needle)
-	{
-		/* compare both strings */
-		if (*haystack != *needle)
-			return (0);
-
-		haystack++;
-		needle++;
-	}
-
-	return (*needle == '\0');
-}
-
-
 
 /**
  *_strstr - function that locates a substring.
@@ -38,13 +13,17 @@ int compare(char *haystack, char *needle)
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
+	int i, j;
+
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		if ((*haystack == *needle) && compare(haystack, needle))
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			return (haystack);
+			if (haystack[i + j] != needle[j])
+				break;
 		}
-		haystack++;
+		if (needle[j] == '\0')
+			return (haystack + i);
 	}
-	return ('\0');
+	return (0);
 }
