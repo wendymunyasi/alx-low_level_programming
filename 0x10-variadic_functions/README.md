@@ -1,5 +1,5 @@
 # Project Name
-**0x0F. C - Function pointers**
+**0x10. C - Variadic functions**
 
 ## Author's Details
 Name: *Wendy Munyasi.*
@@ -34,4 +34,4 @@ Learn about what are variadic functions. How to use `va_start`, `va_arg` and `va
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com.
+To collaborate, reach me through my email address wendymunyasi@gmail.com. 

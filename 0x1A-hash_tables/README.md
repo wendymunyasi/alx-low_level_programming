@@ -36,7 +36,7 @@ What are the most common use cases of hash tables.
 * **4. >>> ht['betty']** - Write a function that retrieves a value associated with a key. - `4-hash_table_get.c`.
 * **5. >>> print(ht)** - Write a function that prints a hash table. - `5-hash_table_print.c`.
 * **6. >>> del ht** - Write a function that deletes a hash table. - `6-hash_table_delete.c`.
-* **7. $ht['Betty'] = 'Cool'** - Rewrite the previous functions using the given data structures - `100-sorted_hash_table.c`.
+* **7. $ht['Betty'] = 'Cool'** - Rewrite the previous functions using the given data structures. - `100-sorted_hash_table.c`.
 
 
 ## Collaborate
